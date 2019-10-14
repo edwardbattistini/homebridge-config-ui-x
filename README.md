@@ -1,6 +1,6 @@
 Git for Theme creators
 
 ## Todo
-- [] add background image to pages
-- [] unify font size
+- [ ] add background image to pages
+- [ ] unify font size
 - [x] unify colors 
