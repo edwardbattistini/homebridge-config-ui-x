@@ -1,25 +1,53 @@
 .config-ui-x-dark-mode {
-  $darkModePrimary: #ffa000;
-  $backgroundColor: #4e4e4e;
-  $secondaryBackground: #2b2b2b;
-  $secondaryText: #9e9e9e;
-  
+  // Apple color dark palette
+  $black: #000;
+  $systemGray6: #1c1c1e8c;
+  $systemGray5: #2c2c2e8c;
+  $systemGray4: #3a3a3c8c;
+  $systemGray3: #48484a8c;
+  $systemGray2: #6363668c;
+  $systemGray: #8e8e938c;
+
+  $systemLight6: #8e8e93e1;
+  $systemLight5: #aeaeb2e1;
+  $systemLight4: #c7c7cce1;
+  $systemLight3: #d1d1d6e1;
+  $systemLight2: #e5e5eae1;
+  $systemLight: #f2f2f7e1;
+  $white: #fff;
+
+  $darkModePrimary: #8a36e3;
+  $darkModeTitle: $white;
+  $backgroundColor: rgba(0, 0, 0, 1);
+  $secondaryBackground: #111111;
+  $secondaryText: $systemLight3;
   background-color: $backgroundColor !important;
 
   .bg-primary {
-    background-color: #2b2b2b !important;
+    background: $secondaryBackground !important;
   }
 
   .primary-text {
-    color: $darkModePrimary
+    color: $darkModeTitle;
+    font-size: 2em;
+    font-weight: 600;
   }
 
   .hb-uix-switch input:checked ~ .hb-uix-slider {
     background-color: $darkModePrimary;
   }
 
-  .btn-primary, .btn-default {
-      @extend .btn-amber !optional;
+  .btn {
+    font-weight: 500 !important;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.8rem;
+  }
+
+  .btn-primary,
+  .btn-default {
+    background: $darkModePrimary !important;
   }
 
   .bg-yellow {
@@ -35,8 +63,8 @@
   }
 
   .card {
-    color: #ffffff;
     background-color: $secondaryBackground !important;
+    border-radius: 1.5em;
   }
 
   .alert-warning {
@@ -54,7 +82,7 @@
 
   .qr-code-container {
     background-color: $secondaryBackground;
-  
+
     svg {
       fill: $darkModePrimary;
     }
@@ -69,7 +97,7 @@
   }
 
   .ace_cursor {
-    color: #FFFFFF !important;
+    color: #ffffff !important;
   }
 
   .ace_selection {
@@ -89,11 +117,11 @@
   }
 
   .ace_variable {
-    color: #E06C75;
+    color: #e06c75;
   }
 
   .ace_string {
-    color: #98C379 !important;
+    color: #98c379 !important;
   }
 
   .ace_numeric {
@@ -101,7 +129,7 @@
   }
 
   .ace_boolean {
-    color: #56B6C2 !important;
+    color: #56b6c2 !important;
   }
 
   a {
@@ -135,7 +163,7 @@
 
   .modal-body {
     background-color: $backgroundColor;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .modal-footer {
@@ -145,7 +173,7 @@
   }
 
   .table {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .table-hover tbody tr:hover {
@@ -153,17 +181,17 @@
   }
 
   markdown {
-    color: #FFFFFF; // $secondaryText !important;
+    color: #ffffff; // $secondaryText !important;
   }
 
   .md-form {
     input {
-      color: #FFFFFF;
+      color: #ffffff;
 
       &:focus {
         box-shadow: 0 1px 0 0 $darkModePrimary !important;
         border-bottom: 1px solid $darkModePrimary !important;
-        &+label {
+        & + label {
           color: $darkModePrimary !important;
         }
       }
@@ -171,22 +199,22 @@
 
     .form-control {
       &:disabled {
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
 
     .grey-text {
       color: $darkModePrimary !important;
     }
-
   }
 
   .hb-npm-search {
-    color: #999999 !important;
-    border-color: #999999 !important;
+    color: $white !important;
+    border-color: $systemGray4 !important;
 
-    &:focus, &:hover {
-      border: 1px solid #999999 !important;
+    &:focus,
+    &:hover {
+      border: 2px solid $darkModePrimary !important;
     }
 
     &:focus {
@@ -195,12 +223,14 @@
     }
   }
 
-  .hb-plugin-settings-modal, .hb-accessories-info-modal {
-    input, select {
+  .hb-plugin-settings-modal,
+  .hb-accessories-info-modal {
+    input,
+    select {
       border-color: $backgroundColor;
       background-color: #575757;
-      color: #FFFFFF;
-       
+      color: #ffffff;
+
       &::placeholder {
         color: $secondaryBackground;
       }
@@ -220,10 +250,113 @@
   .accessory-box {
     background-color: $secondaryBackground;
     color: $secondaryText;
+    border-radius: 1.75em;
   }
 
   .switch-on {
-    background-color: #FFF;
+    background-color: #fff;
     color: #000000;
+  }
+
+  // Custom theme
+  .temperature-circle {
+    width: 2.25em !important;
+    height: 2.25em !important;
+    padding: 7% 1% !important;
+    border-radius: 50%;
+    font-size: 1em !important;
+    font-weight: 500 !important;
+    margin-bottom: 2em !important;
+    background-color: grey;
+    color: lightgrey;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-weight: 500 !important;
+  }
+
+  input {
+    border-radius: 2em !important;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-weight: 500 !important;
+    padding-left: 2em !important;
+    background: $systemGray4 !important;
+    border: 2px solid $systemLight4 !important;
+  }
+
+  .room-title {
+    font-size: 1.5em !important;
+  }
+
+  .accessory-svg > svg {
+    height: 2em !important;
+    width: 2em !important;
+  }
+
+  .accessory-svg {
+    height: 4em !important;
+  }
+  .accessory-label {
+    font-weight: 500 !important;
+  }
+  .accessory-label .grey-text {
+    color: #e06c75 !important;
+  }
+
+  .nav-link {
+    border-radius: 2em !important;
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+    font-weight: 500 !important;
+  }
+
+  .nav-link:focus {
+    border-radius: 2em !important;
+  }
+
+  .ios {
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+  }
+
+  h5 {
+    color: $systemLight2 !important;
+  }
+  h4 {
+    color: $systemLight !important;
+    font-size: 2em !important;
+  }
+  h3 {
+    color: $systemLight !important;
+  }
+  h2 {
+    color: $systemLight !important;
+  }
+
+  h1 {
+    color: $systemLight !important;
+  }
+
+  p {
+    color: $systemLight !important;
+  }
+
+  span {
+    color: $systemLight4 !important;
+    font-weight: 400 !important;
+  }
+  .login-card {
+    background-color: $systemGray4 !important;
+    -webkit-backdrop-filter: blur(50px) !important;
+    backdrop-filter: blur(50px) !important;
+  }
+  .card-text {
+    font-size: 1em !important;
+    color: $systemGray2 !important;
+  }
+
+  .primary-text p {
+    font-size: 0.8em !important;
   }
 }
