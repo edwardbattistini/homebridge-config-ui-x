@@ -1,4 +1,4 @@
-Git for Theme creators
+# Git for Theme creators
 
 ## Todo
 - [ ] add background image to pages
@@ -6,4 +6,9 @@ Git for Theme creators
 - [ ] unify font size
 - [x] unify colors 
 - [x] First UI tweaks for iOS look
+
+- Trying to match this UI in the Apple Home App
+
+![alt text](http://url/to/img.png)
+
 
