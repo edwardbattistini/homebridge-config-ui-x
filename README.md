@@ -9,9 +9,8 @@
 
 ## Trying to match this UI in the Apple Home App
 
-<img src="img1.png" width="188">
-<img src="img2.png" width="188">
-
+![ScreenShot 1](img1.PNG = width=100)
+![ScreenShot 1](img2.PNG = width=100)
 
 
 
