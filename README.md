@@ -9,6 +9,6 @@
 
 - Trying to match this UI in the Apple Home App
 
-![alt text](http://url/to/img.png)
+![alt text](img1.PNG)
 
 
