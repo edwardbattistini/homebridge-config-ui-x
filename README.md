@@ -7,8 +7,9 @@
 - [x] unify colors 
 - [x] First UI tweaks for iOS look
 
-- Trying to match this UI in the Apple Home App
+## Trying to match this UI in the Apple Home App
 
-![alt text](img1.PNG)
+![ScreenShot 1](img1.PNG)
+![ScreenShot 1](img2.PNG)
 
 
