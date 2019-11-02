@@ -9,7 +9,7 @@
 
 ## Trying to match this UI in the Apple Home App
 
-![ScreenShot 1](img1.PNG)
-![ScreenShot 1](img2.PNG)
+![ScreenShot 1](img1.PNG | width=100)
+![ScreenShot 1](img2.PNG | width=100)
 
 
